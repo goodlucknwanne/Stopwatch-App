@@ -50,9 +50,11 @@ function resetTimer() {
     clearInterval(timerId);
     timerId = null;
     elaspedTime = 0;
+    isRunning = false;
     updateDisplay();
 }
 
         // -----> When you click the start/stop or reset button, carries out the called functions...
 start_button.addEventListener('click', startTimer);
+
 reset_button.addEventListener('click', resetTimer);
